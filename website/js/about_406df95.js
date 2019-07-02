@@ -1,0 +1,1 @@
+define("website/js/about",function(){"use strict";layui.use(["common"],function(){var o=layui.common;console.log(o)})});

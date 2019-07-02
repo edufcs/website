@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="金蜂软件是一站式软件开发服务商，明星产品CRM+公海智能空号过滤，提供软件产品私人定制服务,期权交易系统,服务范围APP、高端响应式网站、后台管理系统、微信小程序和公众号开发，大数据分析，智能硬件。服务热线：13422340632。" name="description">
+<meta content="金蜂软件,期权交易系统,CRM,呼叫中心,空号过滤,定制开发,软件开发,客户关系管理,资源管理,智能,APP,小程序,公众号,网站" name="keywords">
+<title>金蜂软件 | 定制软件开发服务商 | 期权交易系统 | CRM、公海资源管理平台、直播间、APP定制、微信开发等服务</title>
+<!--<script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?b83a885d5c96df4550ec775000b3d9db"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>-->
+<!-- 占位符引用-->
+<!--
+    @require "style/less/common/global.less"
+    @require "style/less/common/font-size.less"
+    @require "style/fcs_icon/iconfont.css"
+-->
+    <link rel="stylesheet" type="text/css" href="pkg/web_app_9d1b5a7_03a68a3.css" />
+    <style>html,body{width:100%;overflow-x:hidden;background:#f5f5f6;color:#f5f5f6;background:#e8e8e8}a{color:#f5f5f6}.inner{width:1200px;height:100%;margin:0 auto}[class^=fcs_icon],[class*=fcs_icon]{font-family:fcs_iconfont!important;font-size:inherit;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.techers,.environment{color:#333}.techers h2.title,.environment h2.title{font-size:30px;position:relative;padding-left:20px;background:#ccc;margin:10px 0;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}.techers h2.title::before,.environment h2.title::before{content:'';position:absolute;left:5px;top:7%;height:86%;width:5px;background:#fa2f39}.techers h3,.environment h3{margin:10px 0;text-indent:2em}.techers .list,.environment .list{font-size:0}.techers .list>li,.environment .list>li{background:#fff;font-size:14px;display:inline-block;width:19%;text-align:center;margin-right:1%;margin-bottom:1%;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px}.techers .list>li p,.environment .list>li p{margin:5px 0}.techers .list>li p .name,.environment .list>li p .name{color:red;margin:0 5px;font-size:18px}</style>
+
+  
+</head>
+<!--公共js-->
+<script type="text/javascript" src="pkg/web_app_9d1b5a7_462e2e6.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=60S6afte8ITuFuQMtWsx6XOsyWBGuku8"></script>
+<script>
+  require('common');
+
+
+  require('components/nav/nav')
+
+
+  require('components/footer/footer')
+
+
+
+  layui.use(['jquery', 'carousel', 'layer', 'form', 'common'], function () {
+    var layer = layui.layer
+      , $ = layui.$ //重点处
+      , carousel = layui.carousel
+      , form = layui.form
+      , common = layui.common;
+
+
+
+    function renderBanner() {
+      var str = ''
+      var banners = ['/style/images/index/41.jpg', '/style/images/index/42.jpg', '/style/images/index/43.jpg']
+      for (let i = 0; i < banners.length; i++) {
+        str += '<img src=' + banners[i] + ' alt="方程式教育">'
+      }
+      $('#banner .layui-item').html(str)
+      //建造实例
+      carousel.render({
+        elem: '#banner'
+        , width: '100%' //设置容器宽度
+        , height: '400px'
+        , arrow: 'always' //始终显示箭头
+        //,anim: 'updown' //切换动画方式
+      });
+    }
+
+    renderBanner()
+
+
+    common.http({
+      url: 'https://api.myjson.com/bins/lb26c',
+      type: 'get',
+      data: {
+        user_id: ''
+      },
+      success:function (res) {
+        console.log(res);
+      },
+      error:function (err) {
+        console.log(err);
+      }
+    })
+
+  });
+
+</script><!--<script src="/lib/jq/jquery.min.js"></script>-->
+<!--<script src="/lib/carousel.js"></script>-->
+<!--<script src="/lib/scroll/js/myscroll.js"></script>--><!--<script type="text/javascript" src="http://g.alicdn.com/de/prismplayer/2.6.0/aliplayer-min.js"></script>-->
+
+
+<!-- 公共的js模块可在这里引入-->
+<body>
+<!--<link rel="import" href="/components/header/header.html?__inline">-->
+<div class="main">
+  <div class="nav cl">
+  <div class="inner">
+    <h1 class="logo fl">
+      <a href="/"><img src="../../style/images/logo_9444d01.png" alt="方程式教育" ></a>
+    </h1>
+    <div class="contact fr">服务热线：0795-6683798</div>
+    <ul class="ul-nav layui-nav fr" lay-filter="menu">
+      <li class="layui-nav-item layui-this"><a href="/">首页</a></li>
+      <li class="layui-nav-item"><a href="">课程介绍</a></li>
+      <li class="layui-nav-item"><a href="">特色</a></li>
+      <li class="layui-nav-item"><a href="">公告</a></li>
+      <li class="layui-nav-item"><a href="/website/html/about.html">关于我们</a></li>
+      <!--
+      <li class="layui-nav-item">
+        <a href="javascript:;">解决方案</a>
+         二级菜单
+        <dl class="layui-nav-child">
+          <dd><a href="">移动模块</a></dd>
+          <dd><a href="">后台模版</a></dd>
+          <dd><a href="">电商平台</a></dd>
+        </dl>
+      </li>
+      -->
+    </ul>
+
+  </div>
+</div>
+
+<div class="back-up">
+  <i class="fcs_icon-fanhuidingbu"></i>
+</div>
+
+
+<!--<ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">-->
+<!--  <li class="layui-nav-item layui-nav-itemed">-->
+<!--    <a href="javascript:;">默认展开</a>-->
+<!--    <dl class="layui-nav-child">-->
+<!--      &lt;!&ndash; layui-this 默认选中&ndash;&gt;-->
+<!--      <dd class="layui-this"><a href="javascript:;">选项一</a></dd>-->
+<!--      <dd><a href="javascript:;">选项二</a></dd>-->
+<!--      <dd><a href="javascript:;">选项三</a></dd>-->
+<!--      <dd><a href="">跳转项</a></dd>-->
+<!--    </dl>-->
+<!--  </li>-->
+<!--  <li class="layui-nav-item">-->
+<!--    <a href="javascript:;">解决方案</a>-->
+<!--    <dl class="layui-nav-child">-->
+<!--      <dd><a href="">移动模块</a></dd>-->
+<!--      <dd><a href="">后台模版</a></dd>-->
+<!--      <dd><a href="">电商平台</a></dd>-->
+<!--    </dl>-->
+<!--  </li>-->
+<!--  <li class="layui-nav-item"><a href="">云市场</a></li>-->
+<!--  <li class="layui-nav-item"><a href="">社区</a></li>-->
+<!--</ul>-->
+
+  <div class="layui-carousel" id="banner">
+    <div carousel-item class="layui-item"></div>
+  </div>
+  <div class="inner">
+    <div class="techers">
+      <h2 class="title">师资</h2>
+      <h3><i>授课老师针对薄弱环节因材施教；一对一授课，老师和孩子精神更集中；教学老师把握孩子学习轨迹，为学习护航；上课时间灵活，自习课老师全程陪读；学大老师抢先占，5年以上专职老师、5星级教师。</i></h3>
+      <ul class="list">
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+      </ul>
+    </div>
+    <div class="environment">
+      <h2 class="title">环境</h2>
+      <h3><i>授课老师针对薄弱环节因材施教；一对一授课，老师和孩子精神更集中；教学老师把握孩子学习轨迹，为学习护航；上课时间灵活，自习课老师全程陪读；学大老师抢先占，5年以上专职老师、5星级教师。</i></h3>
+      <ul class="list">
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+        <li>
+          <img src="style/images/index/wangjiliang_3b2a071.jpg" alt="方程式教育">
+          <p><span class="name">汪继良</span>老师</p>
+          <p>辅导年级：高中</p>
+          <p>辅导课目：英语</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+  <div class="inner">
+    <ul class="content">
+      <li>
+        <img src="../../style/images/logo_9444d01.png" alt="方程式教育">
+        <dl>
+          <dt>江西省南昌市南昌县莲塘校区</dt>
+          <dd>400-878-0791</dd>
+        </dl>
+
+        </p>
+      </li>
+      <li>
+        <h3>常见问题</h3>
+        <ol>
+          <li><a href="javascript:;">学生就业问题</a></li>
+          <li><a href="javascript:;">学时学费问题</a></li>
+          <li><a href="javascript:;">课程方向问题</a></li>
+          <li><a href="javascript:;">咨询乘车路线</a></li>
+          <li><a href="javascript:;">其它相关问题</a></li>
+        </ol>
+      </li>
+      <li class="address">
+        <h3>学校地址</h3>
+        <p>江西校区【重点】</p>
+        <p>地址：南昌市青山湖区上海路173号 <br> (航空大学工程训练中心3楼)</p>
+        <p>电话：400-878-0791 18503036677（在线老师）</p>
+      </li>
+      <li class="contact">
+        <h3>联系我们</h3>
+        <dl class="fl">
+          <dt><img src="../../style/images/index/qrcode_aa99e12.png" alt="方程式教育"></dt>
+          <dd>微信</dd>
+        </dl>
+        <dl class="fl">
+          <dt><a title="添加客服QQ" href="http://wpa.qq.com/msgrd?v=3&uin=812354038&site=qq&menu=yes" target="_blank"><i class="fcs_icon-QQ"></i></a></dt>
+          <dd>QQ</dd>
+        </dl>
+
+
+      </li>
+    </ul>
+  </div>
+  <h4>
+    <p>Copyright 南昌德弘信息技术有限公司 1999-2019 Edu Inc.　赣ICP备16002418号-1 办学许可证号（3601004000192）</p>
+    <p>©2019方程式教育版权所有 未经授权禁止复制</p>
+  </h4>
+</div>
+</div>
+</body>
+</html>

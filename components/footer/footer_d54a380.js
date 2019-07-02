@@ -1,0 +1,1 @@
+define("components/footer/footer",function(){"use strict"});
