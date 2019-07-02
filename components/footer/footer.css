@@ -1,0 +1,112 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #f5f5f6;
+  color: #f5f5f6;
+  background: #e8e8e8;
+}
+a {
+  color: #f5f5f6;
+}
+.inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+[class^='fcs_icon'],
+[class*='fcs_icon'] {
+  font-family: 'fcs_iconfont' !important;
+  /* 以下内容参照第三方图标库本身的规则 */
+  font-size: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer {
+  background: #393d49;
+  color: #f5f5f6;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 15px;
+}
+.footer .content {
+  font-size: 0;
+}
+.footer .content > li {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.footer .content > li:first-child {
+  width: 300px;
+}
+.footer .content > li:nth-child(2) {
+  width: 200px;
+}
+.footer .content > li:nth-child(3) {
+  width: 350px;
+}
+.footer .content > li:nth-child(4) {
+  width: 350px;
+}
+.footer .content > li:nth-child(4) dl {
+  margin: 10px 0;
+  text-align: center;
+}
+.footer .content > li:nth-child(4) dl + dl {
+  margin-left: 30px;
+  text-align: center;
+}
+.footer .content > li:nth-child(4) dl dt {
+  height: 100px;
+}
+.footer .content > li:nth-child(4) dl dt i {
+  font-size: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+.footer .content > li:nth-child(4) dl dd {
+  font-size: 18px;
+  margin-top: 50px;
+}
+.footer .content > li dl {
+  margin: 35px 0;
+  font-size: 16px;
+}
+.footer .content > li dl dd {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.footer .content > li h3 {
+  color: #f5f5f6;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 15px;
+}
+.footer .content > li h3.contact {
+  text-align: center;
+}
+.footer .content > li ol > li {
+  line-height: 24px;
+  margin-top: 6px;
+}
+.footer .content > li ol > li a {
+  color: #9a9a9a;
+}
+.footer .content > li ol > li a:hover {
+  color: #f5f5f6;
+}
+.footer .content > li p {
+  margin-top: 10px;
+  color: #9a9a9a;
+}
+.footer h4 {
+  background: #2d3540;
+  padding: 10px 0;
+}
+.footer h4 p {
+  margin: 10px 0;
+}

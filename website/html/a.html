@@ -15,8 +15,21 @@
     @require "style/less/common/font-size.less"
     @require "style/fcs_icon/iconfont.css"
 -->
-    <link rel="stylesheet" type="text/css" href="../../pkg/web_app_c2b16f9_3465539.css" />
-    <style>#a{color:red}#a h1{font-size:100px}#a p{font-size:50px}</style>
+    <link rel="stylesheet" type="text/css" href="../../style/less/common/global.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/less/common/font-size.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/fcs_icon/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css" />
+    <style>#a {
+  color: red;
+}
+#a h1 {
+  font-size: 100px;
+}
+#a p {
+  font-size: 50px;
+}
+</style>
 
   
 </head>
@@ -96,11 +109,17 @@
 </div>
 </body>
 <!--公共js-->
-<script type="text/javascript" src="../../pkg/web_app_c2b16f9_6e6c5f0.js"></script>
+<script type="text/javascript" src="../../lib/mod.js"></script>
+<script type="text/javascript" src="../../components/header/header.js"></script>
+<script type="text/javascript" src="../../modules/http/api.js"></script>
+<script type="text/javascript" src="../../modules/utils/utils.js"></script>
+<script type="text/javascript" src="../../modules/utils/index.js"></script>
+<script type="text/javascript" src="../../modules/common.js"></script>
+<script type="text/javascript" src="../js/a.js"></script>
 <script>
   require('components/header/header')
 </script>
-<script src="../../lib/layui/layui_07dabac.js"></script>
+<script src="../../lib/layui/layui.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=60S6afte8ITuFuQMtWsx6XOsyWBGuku8"></script>
 <script>
   require('common');
