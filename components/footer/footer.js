@@ -1,7 +1,1 @@
-define('components/footer/footer', function(require, exports, module) {
-
-  "use strict";
-  
-  // console.log('!!!!!!!!!!!!!!!');
-
-});
+define("components/footer/footer",function(){"use strict"});

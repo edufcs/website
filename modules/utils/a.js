@@ -1,16 +1,1 @@
-define('utils/a', function(require, exports, module) {
-
-  'use strict';
-  
-  var a = {
-    fA: function fA() {
-      console.log('a');
-    },
-    fB: function fB() {
-      console.log('b');
-    }
-  };
-  
-  module.exports = a;
-
-});
+define("utils/a",function(o,n,t){"use strict";var c={fA:function(){console.log("a")},fB:function(){console.log("b")}};t.exports=c});
